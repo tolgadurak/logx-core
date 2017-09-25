@@ -1,0 +1,26 @@
+{
+	"configuration": {
+		"status": "info",
+		"name": "Default",
+		"packages": "io.tolgadurak",
+		"ThresholdFilter": {
+			"level": "debug"
+		},
+		"appenders": {
+			"Console": {
+				"name": "STDOUT",
+				"PatternLayout": {
+					"pattern": "%d %p %c{1.} [%t] %m%n"
+				}
+			}
+		},
+		"loggers": {
+			"root": {
+				"level": "info",
+				"AppenderRef": {
+					"ref": "STDOUT"
+				}
+			}
+		}
+	}
+}
